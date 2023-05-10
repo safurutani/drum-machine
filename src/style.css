@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+body {
+  width: 99%;
+  background: rgb(12,131,13);
+background: linear-gradient(90deg, rgb(249,248,113) 0%, rgb(148,221,125) 25%, rgb(45,186,143) 50%, rgb(0,147,148) 75%, rgb(0,106,132) 100%);
+  font-family: Bruno Ace SC;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+}
+#drum-machine {
+  min-width: 720px;
+  width: 40%;
+  margin: auto;
+  border: 18px #1E2E3E solid;
+  background: #648AAB;
+  display: flex;
+  
+}
+.container {
+  padding: 12px;
+  width: 360px;
+}
+.row {
+  display: flex;
+  margin: auto;
+}
+.drum-pad {
+  height: 100px;
+  width: 100px;
+  border: 4px #1E2E3E solid;
+  border-radius: 25px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 26px;
+  background: #154360;
+  color: white;
+  margin: 5px;
+  box-shadow: 2px 2px 6px #2980B9;
+}
+.drum-pad:hover {
+  cursor: pointer;
+}
+#display {
+  border: 4px #1E2E3E solid;
+  height: 60px;
+  width: 75%;
+  margin: auto 25px;
+  background: #B3DAFE;
+  line-height: 60px;
+  text-align: center;
+  font-size: 22px;
+}
+
+@media (max-width: 720px) {
+  #drum-machine {
+    display: block;
+    min-width: 380px;
+    padding-bottom: 12px;
+  }
+  #display {
+    margin: auto;
+  }
+}
